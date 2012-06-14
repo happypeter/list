@@ -4,6 +4,7 @@ img.gw {
 }
 
 h1#words {
+  margin-top: 40px;
   color:#839ba9; 
   text-align: center;
   /* github-blue */
@@ -11,19 +12,18 @@ h1#words {
 
 .shadow1 {
     background-color: rgb(68,68,68); /* Needed for IEs */
-    width: 800px;
-    margin: 0 auto;
+    width: 810px;
     -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
     -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
     box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
     -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
     zoom: 1;
 }
 .shadow1 .content {
+    padding: 5px;
+    border: 1px solid #777;
     position: relative; /* This protects the inner element from being blurred */
+    background-color: white;
     width: 800px;
-    margin-bottom: 40px;
-    margin: 0 auto;
 }
