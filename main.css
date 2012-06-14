@@ -1,0 +1,15 @@
+div#pic {
+  text-align: center;
+  margin-top: 50px;
+}
+
+img.gw {
+  padding: 5px;
+  border: 1px solid #777;
+}
+
+h1#words {
+  color:#839ba9; 
+  text-align: center;
+  /* github-blue */
+}
