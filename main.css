@@ -6,6 +6,8 @@ div#pic {
 img.gw {
   padding: 5px;
   border: 1px solid #777;
+  width: 800px;
+  height: 600px;
 }
 
 h1#words {
