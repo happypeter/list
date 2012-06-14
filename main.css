@@ -8,6 +8,9 @@ img.gw {
   border: 1px solid #777;
   width: 800px;
   height: 600px;
+  -moz-box-shadow:    2px 3px 3px 3px #ccc;
+  -webkit-box-shadow: 2px 3px 3px 3px #ccc;
+  box-shadow:         2px 3px 3px 3px #ccc;
 }
 
 h1#words {
