@@ -1,20 +1,29 @@
-div#pic {
-  text-align: center;
-  margin-top: 50px;
-}
-
 img.gw {
-  padding: 5px;
-  border: 1px solid #777;
   width: 800px;
   height: 600px;
-  -moz-box-shadow:    2px 3px 3px 3px #ccc;
-  -webkit-box-shadow: 2px 3px 3px 3px #ccc;
-  box-shadow:         2px 3px 3px 3px #ccc;
 }
 
 h1#words {
   color:#839ba9; 
   text-align: center;
   /* github-blue */
+}
+
+.shadow1 {
+    background-color: rgb(68,68,68); /* Needed for IEs */
+    width: 800px;
+    margin: 0 auto;
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+}
+.shadow1 .content {
+    position: relative; /* This protects the inner element from being blurred */
+    width: 800px;
+    margin-bottom: 40px;
+    margin: 0 auto;
 }
