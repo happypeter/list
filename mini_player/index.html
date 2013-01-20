@@ -13,18 +13,24 @@
       position: relative;
     }
     #inner {
-      width: 408px;
+      width: 403px;
       height: 213px;
       background-color: rgba(255, 255, 255, 0.5);
       min-height: 40px;
       position: absolute;
-      top: 65px;
-      left: 535px;
+      left: 50%;
+      top: 50%;
+      /* http://www.udemy.com/
+      I have to set both 'left' and 'top' to be 50%,
+      otherwise the div moves when page resizing */
+      margin-left: -416px;
+      margin-top: -185px;
       color: red;
       border: 1px solid red;
       font-weight: bolder;
       font-size: 40px;
       padding: 20px;
+      overflow: hidden;
     }
     img {
       position: absolute;
