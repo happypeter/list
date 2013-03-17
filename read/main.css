@@ -1,0 +1,56 @@
+/*
+
+  CSS style sheet for Wikipedia articles.
+
+  Written by Hakon Wium Lie March 2008.
+
+  This style sheet may be reused by anyone for any purpose.
+
+  Here's an example of how to use the style sheet:
+
+  prince --no-author-style -s http://www.princexml.com/howcome/2008/wikipedia/wiki2.css http://en.wikipedia.org/wiki/Winter_war -o foo.pdf
+
+*/
+
+
+/* basic style settings*/
+
+body {
+  prince-linebreak-magic: auto; 
+  hyphens: auto;
+  text-align: justify;
+}
+div.pic {
+  float:left;
+  margin-right:20px;
+}
+#wrapper {
+  width: 50em;
+  margin: 2em auto 0;
+  padding: 0;
+}
+#pic_name {
+  font-size: 80%;
+  font-weight: bold;
+  text-align:center; 
+  padding:5px;
+}
+h1 {
+  font-size: 140%;
+  text-align:center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+img {
+  width: 200px;
+  height: 280px;
+}
+
+div.explain {
+  font-size: 200%;
+}
+#header {
+  margin-bottom: 5px;
+  text-align:center;
+  font-size: 80%;
+}
