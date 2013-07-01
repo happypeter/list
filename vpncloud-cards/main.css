@@ -1,0 +1,96 @@
+#teasers {
+  width: 960px;
+  margin: 0 auto;
+}
+.teaser p {
+  line-height: 20px;
+}
+#teasers .teaser .grid-main {
+  text-align: center;
+}
+html, body {
+  color: #585858;
+}
+body {
+  font-family: "Helvetica Neue",Helvetica,"Heiti SC","Segoe UI","Microsoft YaHei",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+font-weight: bold;
+font-style: normal;
+}
+.grid-footer {
+border-top: 1px solid #E0DEDD;
+padding: 22px 0 0 0;
+margin: 0 20px;
+}
+
+.teaser .button-clean {
+height: 15px;
+width: 148px;
+text-decoration: none;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+color: white;
+display: block;
+border: 0;
+padding: 12px 0px 15px 0px;
+margin: 0 auto 24px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.button-clean {
+background: #00A0C6 url(http://vpncloud-a.oss.aliyuncs.com/assets/shape_button-2190623afbc00530d0a7870913623489.png) repeat-x 0 100%;
+}
+a {
+color: #00A0C6;
+outline: 0 none;
+}
+#teasers .teaser {
+  background-color: #EFEFEF;
+}
+.grid-4 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+.teaser p img {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  width: auto 9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#teasers .teaser .grid-main {
+  padding: 22px 10px;
+  text-align: center;
+  height: 280px;
+}
+
+#teasers .teaser h3 {
+  height: 20px;
+  padding: 30px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #211E1C;
+  text-decoration: none;
+  line-height: 100%;
+  text-align: center;
+  border-bottom: 6px solid #00A0C6;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
