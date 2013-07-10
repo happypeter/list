@@ -1,6 +1,11 @@
-div#course {
+.container {
   margin: 0 auto;
-  margin-top: 50px;
+  width: 920px;
+}
+.course {
+  float: left;
+  margin-top: 51px;
+  margin-right: 40px;
   position: relative;
   text-align: left;
   width: 206px;
