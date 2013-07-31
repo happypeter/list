@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="jquery-1.8.1.js"></script>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background: #e7ebf2;
+        font-size: 13px;
+      }
+      header {
+        width: 100%;
+        height: 42px;
+        background: #fff;
+      }
+      #container {
+        width: 981px;
+        margin: 0 auto;
+      }
+      .sidebar {
+        width: 122px;
+        float: right;
+        display: block;
+      }
+      .content, .label {
+        width: 851px !important;
+        float: left;
+        display: block;
+        position: relative;
+      }
+      .label .year {
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #c4cde0;
+        width: 100px;
+        padding: 5px;
+        margin-top: 10px;
+        background-color: #e7ebf2;
+      }
+      .label .middle {
+        margin-bottom: 10px;
+      }
+      .line {
+        background: url(line.png) repeat-y center top;
+        margin: 0;
+        padding: 15px 0;
+      }
+      .item {
+        border: 1px solid #c4cde0;
+        width: 409px;
+        background: #fff;
+        display: block;
+        margin-bottom: 20px; position: relative; text-align: center; } .pointer { background-image: url(fstimeline.png); background-repeat: no-repeat; background-size: auto; background-position: -805px -27px; height: 15px; width: 19px;
+        position: absolute;
+        top: 20px;
+        left: -19px;
+      }
+      .left .pointer {
+        background-image: url(fstimeline.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: -825px -27px;
+        left: auto;
+        right: -19px;
+      }
+      .right .pointer {
+        top: 30px;
+      }
+      .left {
+        clear: left;
+        float: left;
+      }
+      .right {
+        clear: right;
+        float: right;
+      }
+      .clearfix {
+        zoom: 1;
+      }
+      .clearfix::after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+      }
+      .Spinner {
+        position: absolute;
+        bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+    <div id="container">
+      <div class="sidebar">
+        <h3>hello sidebar!</h3>
+      </div>
+      <div class="label">
+        <div class="year">
+          2013
+        </div>
+      </div>
+      <div class="content line">
+        <div class="item" class="clearfix">
+          <p>1</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>2</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>3</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>4</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>5</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="label">
+          <div class="year middle">
+            2012
+          </div>
+        </div>
+        <div class="item" class="clearfix">
+          <p>6</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>7</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>8</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>9</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>10</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>11</p>
+          <i class="pointer"></i>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+          <p>it is a rainy day</p>
+        </div>
+        <div class="item" class="clearfix">
+          <p>12</p>
+          <i class="pointer"></i>
+          <p>hello block</p>
+          <p>hello block</p>
+          <p>hello block</p>
+        </div>
+        <div id="Spinner">spinner</div>
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        var left_column_height = 0;
+        var right_column_height = 0;
+        var items = $('.item');
+        for (var i = 0; i < items.length; i++) {
+          if (left_column_height > right_column_height) {
+            right_column_height += items.eq(i).addClass('right').outerHeight(true);
+            } else {
+            left_column_height += items.eq(i).addClass('left').outerHeight(true);
+          }
+        }
+      });
+    </script>
+
+    <script>
+      $(function(){
+        var $timeline = $('.content'),
+        $spinner = $('#Spinner').hide();
+
+        function loadMore(){
+
+          $(window).unbind('scroll.posts');
+
+          $spinner.show();
+
+          $.ajax({
+            url: "more.html",
+            success: function(html){
+              if(html){
+                $content.append(html);
+                $spinner.hide();
+                }else{
+                $spinner.html('<p>No more posts to show.</p>');
+              }
+
+              $(window).bind('scroll.posts',scrollEvent);
+            }
+          });
+        }
+
+        //lastAddedLiveFunc();
+        $(window).bind('scroll.posts',scrollEvent);
+
+        function scrollEvent(){
+          var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+          var  scrolltrigger = 0.95;
+
+          if  ((wintop/(docheight-winheight)) > scrolltrigger)  loadMore();
+        }
+
+      });
+    </script>
+  </body>
+</html>
+
