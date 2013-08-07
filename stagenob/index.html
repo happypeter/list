@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script src="../jquery-1.8.1.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <style type="text/css">
     .container {
@@ -58,17 +57,24 @@
   </div>
 
 </body>
+
 <script>
 
   $( document ).ready(function() {
     $( "li" ).click(function( event ) {
       $("li").css("color", "black");
-      $("#order-image").attr('class', 'order-state-placed');
+      var liclass = $(this).attr('class');
+      switch (liclass) {
+        case "placed":
+          $("#order-image").attr('class', 'order-state-placed');
+          break;
+        default:
+          $("#order-image").attr('class', 'order-state-new');
+      }
       $(this).css("color", "#00adf2");
     });
   });
 
 </script>
-
 </html>
 
