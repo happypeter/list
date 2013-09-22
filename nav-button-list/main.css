@@ -1,7 +1,6 @@
-div#continer {
-  width: 360px;
+.nav-button-list {
+  width: 960px;
   margin: 0 auto;
-  padding-top: 100px;
 }
 
 ul {
