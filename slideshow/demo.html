@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="" content="content">
+    <link rel="stylesheet" href="sp.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="section" >
+      <div class="container bg-image">
+        <div class="explanations-container">
+          <img alt="Acme-demo-tip-1" class="explanation exp-1" src="images/1.png" />
+          <img alt="Acme-demo-tip-2" class="explanation exp-2" src="images/2.png" />
+          <img alt="Acme-demo-tip-3" class="explanation exp-3" src="images/3.png" />
+          <img alt="Acme-demo-tip-4" class="explanation exp-4" src="images/4.png" />
+          <img alt="Acme-demo-tip-5" class="explanation exp-5" src="images/5.png" />
+          <img alt="Acme-demo-tip-6" class="explanation exp-6" src="images/6.png" />
+        </div>
+        <div class="screenshot-mask">
+          <img alt="Acme-demo-page" class="acme-demo-page" src="images/page.png" />
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        var imagePositions = [0, -200, -660, -1035, -2225, -3090]
+        , slideCounter = 0
+        , $images = $('.explanation')
+        , $bigImage = $('.acme-demo-page');
+
+        var nextSlide = function(num) {
+          $images.removeClass('active');
+          $images.eq(num).addClass('active');
+          $bigImage.css('top', imagePositions[num]);
+
+          slideCounter = num;
+
+          setTimeout(function() { nextSlide(getNextSlideNum()); }, 4000);
+        }
+
+        var getNextSlideNum = function() {
+          return (slideCounter == imagePositions.length - 1) ? 0 : (slideCounter + 1);
+        }
+
+        nextSlide(0);
+      });
+    </script>
+  </body>
+</html>

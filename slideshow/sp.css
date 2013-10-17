@@ -1,0 +1,85 @@
+.bg-image {
+  background: url('images/bg.png') top left no-repeat;
+  position: relative;
+  height: 528px;
+}
+.container {
+  width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.explanations-container {
+  position: relative;
+}
+.bg-image .explanations-container .explanation {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+}
+.exp-1 {
+  top: 240px;
+}
+.exp-1.active{
+  top: 250px;
+  opacity: 1 !important;
+}
+.exp-2 {
+  top: 178px;
+}
+.exp-2.active{
+  top: 188px;
+  opacity: 1 !important;
+}
+.exp-3 {
+  top: 236px;
+}
+.exp-3.active{
+  top: 246px;
+  opacity: 1 !important;
+}
+.exp-4 {
+  top: 240px;
+}
+.exp-4.active{
+  top: 250px;
+  opacity: 1 !important;
+}
+.exp-5 {
+  top: 162px;
+}
+.exp-5.active{
+  top: 172px;
+  opacity: 1 !important;
+}
+.exp-6 {
+  top: 396px;
+}
+.exp-6.active{
+  top: 406px;
+  opacity: 1 !important;
+}
+.bg-image .screenshot-mask {
+  position: absolute;
+  overflow: hidden;
+  height: 415px;
+  top: 113px;
+  right: 66px;
+}
+.bg-image .screenshot-mask img {
+  -webkit-transition: top 0.5s ease-in;
+  -moz-transition: top 0.5s ease-in;
+  -ms-transition: top 0.5s ease-in;
+  -o-transition: top 0.5s ease-in;
+  transition: top 0.5s ease-in;
+  max-width: 826px;
+  position: relative;
+  top: 0px;
+}
