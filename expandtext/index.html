@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>expandtext</title>
+  <style>
+    .wrapper {
+      background:#DDD;
+      display:inline-block;
+      padding: 10px;
+      height: 20px;
+      width:auto;
+    }
+    .label {
+      display: inline-block;
+      width: 1em;
+    }
+    .contents, .contents .inner {
+      display:inline-block;
+    }
+    .contents {
+      white-space:nowrap;
+      margin-left: -1em;
+      padding-left: 1em;
+    }
+    .contents .inner {
+      background:#c3c;
+      width:0%;
+      overflow:hidden;
+      -webkit-transition: width 1s ease-in-out;
+      -moz-transition: width 1s ease-in-out;
+      -o-transition: width 1s ease-in-out;
+      transition: width 1s ease-in-out;
+    }
+    .wrapper:hover .contents .inner {
+      width:100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <span class="label">+</span>
+    <div class="contents">
+      <div class="inner">
+        These are the contents of this div
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
