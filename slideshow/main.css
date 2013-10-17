@@ -1,12 +1,19 @@
 .bg-image {
   background: url('images/bg.png') top left no-repeat;
-  position: relative;
   height: 528px;
+  position: relative;
 }
 .container {
-  width: 75rem;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.bg-image .screenshot-mask {
+  position: absolute;
+  overflow: hidden;
+  height: 415px;
+  top: 113px;
+  right: 66px;
 }
 .explanations-container {
   position: relative;
@@ -66,13 +73,6 @@
   top: 406px;
   opacity: 1 !important;
 }
-.bg-image .screenshot-mask {
-  position: absolute;
-  overflow: hidden;
-  height: 415px;
-  top: 113px;
-  right: 66px;
-}
 .bg-image .screenshot-mask img {
   -webkit-transition: top 0.5s ease-in;
   -moz-transition: top 0.5s ease-in;
@@ -81,5 +81,5 @@
   transition: top 0.5s ease-in;
   max-width: 826px;
   position: relative;
-  top: 0px;
+  top: 0;
 }
