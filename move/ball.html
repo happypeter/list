@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Ball</title>
+    <style>
+      p{padding-left:60px;}
+      #foo{
+        border-radius:50px;
+        width:50px;
+        height:50px;
+        background:#c00;
+        position:absolute;
+        top:0;
+        left:0;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Click anywhere to move the ball!</p>
+    <div id="foo"></div>
+    <script type="text/javascript" charset="utf-8">
+      var f = document.getElementById('foo');
+      document.addEventListener('click', function(ev){
+        f.style.left = (ev.clientX-25)+'px';
+        f.style.top = (ev.clientY-25)+'px'; },false);
+    </script>
+  </body>
+</html>
