@@ -1,0 +1,180 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+html, body {
+  min-height: 100%;
+  background: #F0F0F0;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif; }
+
+body, ul, h3, h4, p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+.wrapper {
+  width: 960px;
+  margin: 30px auto;
+  -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4); }
+
+.site-header {
+  background-color: #77CEE0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFF; }
+  .site-header li {
+    position: relative;
+    padding: 30px; }
+    .site-header li .icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #FFF;
+      text-align: center; }
+    .site-header li .intro {
+      margin-left: 110px;
+      padding-left: 30px;
+      border-left: 1px solid #FFF; }
+    .site-header li span {
+      display: inline-block; }
+    .site-header li i {
+      line-height: 74px; }
+    .site-header li h3 {
+      font-size: 30px;
+      font-weight: 500; }
+
+.main {
+  background-color: #FFF; }
+
+.site-footer {
+  padding: 30px 0 10px;
+  color: #FFF;
+  background-color: #77CEE0; }
+  .site-footer .slogan {
+    background-color: #77CEE0;
+    border-bottom: 1px solid #FFF;
+    margin: 0 30px; }
+    .site-footer .slogan p {
+      width: 300px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: -20px;
+      line-height: 40px;
+      font-size: 23px;
+      background-color: #77CEE0; }
+  .site-footer .contact {
+    padding: 20px 100px 0; }
+    .site-footer .contact li {
+      display: inline-block;
+      font-size: 14px;
+      padding: 10px; }
+
+.career {
+  padding-top: 30px;
+  padding: 20px; }
+  .career ul li {
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px; }
+  .career .position {
+    width: 140px;
+    font-size: 22px;
+    line-height: 80px;
+    margin-left: 20px; }
+  .career .short.position {
+    padding: 15px 5px;
+    line-height: 25px; }
+  .career .long.position {
+    width: 300px; }
+  .career .red.position {
+    background-color: #d95c5c !important;
+    border-color: #d95c5c !important;
+    color: #fff !important; }
+  .career .green.position {
+    background-color: #5bbd72 !important;
+    border-color: #5bbd72 !important;
+    color: #fff !important; }
+  .career .blue.position {
+    background-color: #3b83c0 !important;
+    border-color: #3b83c0 !important;
+    color: #fff !important; }
+  .career .teal.position {
+    background-color: #00b5ad !important;
+    border-color: #00b5ad !important;
+    color: #fff !important; }
+  .career .yellow.position {
+    background-color: #F57c00 !important;
+    border-color: #F57c00 !important;
+    color: #fff !important; }
+  .career .deep-red.position {
+    background-color: #d34836 !important;
+    border-color: #d34836 !important;
+    color: #fff !important; }
+  .career .user {
+    width: 80px;
+    margin-left: 30px; }
+  .career .green.user {
+    color: #5bbd72; }
+  .career .yellow.user {
+    color: #F57c00; }
+  .career .blue.user {
+    color: #3b83c0; }
+  .career .salary {
+    line-height: 80px;
+    color: #00b5ad;
+    font-size: 22px; }
+
+.web-design, .game-design {
+  position: relative;
+  border-top: 1px dotted #ddd;
+  padding: 15px 30px; }
+  .web-design p, .game-design p {
+    color: #666;
+    font-size: 12px; }
+  .web-design .title, .game-design .title {
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 10px; }
+  .web-design .picture, .game-design .picture {
+    width: 240px;
+    text-align: center;
+    color: #77CEE0; }
+    .web-design .picture .fa-5x, .game-design .picture .fa-5x {
+      font-size: 10em; }
+  .web-design ol, .game-design ol {
+    width: 650px;
+    padding-left: 40px; }
+    .web-design ol li, .game-design ol li {
+      font-size: 14px;
+      color: #555; }
+
+.web-design .picture {
+  margin-top: 0;
+  position: absolute;
+  top: 50px;
+  right: 30px; }
+
+.game-design .picture {
+  position: absolute;
+  top: 50px;
+  left: 30px; }
+.game-design ol {
+  float: right; }
