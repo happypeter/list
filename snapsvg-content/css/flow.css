@@ -1,0 +1,54 @@
+.flow-content {
+  position: relative;
+  width: 600px;
+  margin: 0 auto 100px auto;
+}
+
+.panel-nav {
+  position: absolute;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: solid 1px #e5e5e5;
+  border-radius: 50px;
+}
+
+.panel-nav:active {
+  border-color: #4183c4;
+}
+
+.panel-nav.prev {
+  left: -165px;
+}
+
+.panel-nav.next {
+  left: 644px;
+}
+
+.panel-nav .label {
+  font-size: 20px;
+  line-height: 100px;
+  color: #4183c4;
+}
+
+.panel-nav.disabled .label {
+  color: #e5e5e5;
+}
+
+.panel-nav.disabled:active {
+  cursor: default;
+  border-color: #e5e5e5;
+}
+
+.panel-content {
+  display: none;
+}
+
+.panel-content.active {
+  display: block;
+}
+
+circle:hover {
+  cursor: pointer;
+}

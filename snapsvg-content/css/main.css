@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #ececec;
+  font-family: sans-serif;
+}
+.main {
+  position: relative;
+  width: 960px;
+  min-height: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+#playground g {
+  cursor: pointer;
+}
